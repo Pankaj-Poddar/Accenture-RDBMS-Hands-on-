@@ -1,0 +1,8 @@
+create table Subject(
+                      subject_id number,
+                      primary key(subject_id),
+                      subject_name varchar2(30),
+                      subject_code varchar2(10),
+                      staff_id number,
+                      foreign key(staff_id) references Staff(staff_id);
+                      )
