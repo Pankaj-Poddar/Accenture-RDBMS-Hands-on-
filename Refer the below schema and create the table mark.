@@ -1,0 +1,8 @@
+create table Mark(
+                    value number,
+                    subject_id number,
+                    student_id number,
+                    primary key(subject_id,student_id),
+                    foreign key(student_id) references Student(student_id),
+                    foreign key(subject_id) references Subject(subject_id);
+                    )
