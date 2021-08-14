@@ -1,0 +1,7 @@
+create table department(
+                        dept_id number(4) Primary Key,
+                        prod_id number(4),
+                        dept_name varchar2(25) Unique,
+                        dept_head varchar2(25) NOT NULL,
+                        foreign key(prod_id) references product(prod_id)
+                        );
